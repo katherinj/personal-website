@@ -21,7 +21,11 @@ export default function Navbar() {
   return (
     <nav className="navbar" id="navbar">
       <div className="logo">
-        <Link to="/" className="title-link">
+        <Link
+          to="/"
+          className="title-link"
+          onClick={() => myFunction("Landing")}
+        >
           <div className="title"> Katherin.io </div>
         </Link>
         <a className="menu-icon" onClick={() => myFunction("")}>
@@ -31,14 +35,14 @@ export default function Navbar() {
 
       <div className="nav-links" id="nav-links">
         <Link
-          to="/"
+          to="/about"
           className={currentLink == "About" ? "active nav-link" : "nav-link"}
           onClick={() => myFunction("About")}
         >
           About Me
         </Link>
         <Link
-          to="/"
+          to="/portfolio"
           className={
             currentLink == "Portfolio" ? "active nav-link" : "nav-link"
           }
@@ -47,7 +51,7 @@ export default function Navbar() {
           Portfolio
         </Link>
         <Link
-          to="/"
+          to="/contact"
           className={currentLink == "Connect" ? "active nav-link" : "nav-link"}
           onClick={() => myFunction("Connect")}
         >

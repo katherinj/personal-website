@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import "./Landing.css";
 
 export default function Landing() {
@@ -14,15 +15,20 @@ export default function Landing() {
           </h3>
         </div>
         <div className="landing-btn-container">
-          <button className="portfolio-btn" title="Portfolio">
-            Portfolio
-          </button>
+          <Link to="/portfolio">
+            <button className="portfolio-btn landing-btn" title="Portfolio">
+              Portfolio
+            </button>
+          </Link>
           <a
             href="https://www.linkedin.com/in/katherin-jimenez-2a7876220/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="linkedin-btn social" title="LinkedIn Profile">
+            <button
+              className="linkedin-btn social landing-btn"
+              title="LinkedIn Profile"
+            >
               <i class="fa-brands fa-linkedin-in"></i>
             </button>
           </a>
@@ -31,13 +37,18 @@ export default function Landing() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="github-btn social" title="GitHub Repositories">
+            <button
+              className="github-btn social landing-btn"
+              title="GitHub Repositories"
+            >
               <i class="fa-brands fa-github"></i>
             </button>
           </a>
-          <button className="contact-btn" title="Contact Me">
-            Contact Me
-          </button>
+          <Link to="/contact">
+            <button className="contact-btn landing-btn" title="Contact Me">
+              Contact Me
+            </button>
+          </Link>
         </div>
       </div>
 

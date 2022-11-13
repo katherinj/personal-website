@@ -27,6 +27,11 @@
   font-size: 25px;
   font-weight: bolder;
 }
+.title:hover{
+  color: var(--light-green);
+  transition: .1s ease-out;
+}
+
 .logo .title-link{
   padding-left: 0px;
 }
