@@ -1,0 +1,108 @@
+.navbar {
+  height: 50px;
+  background-color: white;
+  box-shadow: 0px 1px 30px rgb(209, 209, 209);
+  padding: 0px var(--side-padding);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  z-index: 9999;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  width: 20%;
+  min-width: 200px;
+}
+.title {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.navbar a {
+  color: black;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  border-radius: 60px;
+  z-index: 99;
+}
+
+.nav-link::after{
+  content: '';
+  display: block;
+  width: 0%;
+  height: 1px;
+  background: #000;
+  transform: scale(0);
+  transition: .2s all ease-out;
+
+  
+}
+.nav-link:hover:after {
+  transform: scale(1);
+  width: 100%;
+}
+/* Add an active class to highlight the current page */
+.navbar a.active {
+  /* background-color: rgb(240, 217, 237); */
+  color: black;
+}
+.navbar .nav-link.active::after{
+  transform: scale(1);
+  width: 100%;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.navbar .menu-icon {
+  visibility: hidden;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+  }
+  .nav-links {
+    display: none;
+  }
+  .logo {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navbar .menu-icon {
+    visibility: visible;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .nav-links.responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: whitesmoke;
+    width: 100%;
+    height: auto;
+    z-index: 99;
+    position: absolute;
+    top: 47px;
+  }
+}
