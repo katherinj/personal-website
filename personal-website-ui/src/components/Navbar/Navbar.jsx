@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <nav className="navbar" id="navbar">
       <div className="logo">
-        <Link to="/">
+        <Link to="/" className="title-link">
           <div className="title"> Katherin.io </div>
         </Link>
         <a className="menu-icon" onClick={() => myFunction("")}>
