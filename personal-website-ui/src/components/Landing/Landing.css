@@ -33,17 +33,25 @@
 }
 
 .landing-btn-container button{
-    font-size: 15px;
+    font-size: 18px;
     background-color: black;
     color: white;
     border-radius: 7px;
     padding: 7px;
     cursor: pointer;
 }
+.landing-btn-container button:hover{
+    background-color: transparent;
+    color: black;
+    transition: .1s ease-in;
+
+}
 .landing-btn-container .social{
     background-color: transparent;
     font-size: 30px;
-    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 80px;
 }
 .landing-btn-container .social:hover {
     background-color: black;
