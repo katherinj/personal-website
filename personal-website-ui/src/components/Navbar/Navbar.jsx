@@ -26,7 +26,7 @@ export default function Navbar() {
           className="title-link"
           onClick={() => myFunction("Landing")}
         >
-          <div className="title"> Katherin.io </div>
+          <div className="title"> KJ. </div>
         </Link>
         <a className="menu-icon" onClick={() => myFunction("")}>
           <i className="fa-solid fa-bars"></i>

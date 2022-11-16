@@ -1,6 +1,5 @@
 .navbar {
   height: var(--navbar-height);
-  background-color: white;
   position: absolute;
   width: 100%;
   padding: 0px var(--side-padding);
@@ -45,13 +44,16 @@
   border-radius: 60px;
   z-index: 99;
 }
+.navbar a:hover {
+  color: white;
+}
 
 .nav-link::after{
   content: '';
   display: block;
   width: 0%;
   height: 1px;
-  background: #000;
+  background: white;
   transform: scale(0);
   transition: .2s all ease-out;
 
@@ -63,8 +65,9 @@
 }
 /* Add an active class to highlight the current page */
 .navbar a.active {
-  /* background-color: rgb(240, 217, 237); */
-  color: black;
+  color: var(--light-green);
+  background-color: white;
+
 }
 .navbar .nav-link.active::after{
   transform: scale(1);

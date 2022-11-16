@@ -5,9 +5,18 @@ import "./Landing.css";
 export default function Landing() {
   return (
     <div className="landing">
+      <div className="landing-image">
+        <div className="landing-image-container">
+          <img
+            src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
       <div className="landing-info">
         <div className="landing-text">
-          <h1 className="landing-title"> Katherin </h1>
+          <h1 className="landing-title"> KATHERIN </h1>
           <h3 className="landing-description">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -49,15 +58,6 @@ export default function Landing() {
               Contact Me
             </button>
           </Link>
-        </div>
-      </div>
-
-      <div className="landing-image">
-        <div className="landing-image-container">
-          <img
-            src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
-            alt=""
-          />
         </div>
       </div>
     </div>
