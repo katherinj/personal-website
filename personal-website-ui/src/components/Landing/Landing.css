@@ -1,0 +1,92 @@
+.landing {
+    /* background-image: linear-gradient(
+        to bottom,
+        #A8C7BB,
+        #d9dfdd,
+        #A8C7BB
+      ); */
+    height: 100vh;
+    width: 100%;
+    padding: var(--side-padding);
+    padding-top: var(--navbar-height);
+    display: flex;
+    flex-wrap: wrap;
+}
+.landing-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.landing-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing-image-container{
+    display: flex;
+    justify-content: center;
+}
+.landing-text{
+    width: 450px;
+}
+.landing-text .landing-title{
+    font-size: 65px;
+    padding-bottom: 50px;
+}
+.landing-btn-container{
+    display: flex;
+    justify-content:space-between;
+    width: 450px;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.landing-btn-container button{
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    padding: 7px;
+    cursor: pointer;
+}
+.landing-btn-container button:hover{
+    background-color: transparent;
+    color: black;
+    transition: .1s ease-in;
+
+}
+.landing-description{
+    font-size: 20px;
+}
+.landing-btn-container .social{
+    background-color: transparent;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 80px;
+}
+.landing-btn-container .social:hover {
+    background-color: black;
+    color: white;
+    transition: .1s ease-in;
+}
+
+.landing-btn-container .social:hover i{
+    color: white;
+    transition: .1s ease-in;
+}
+
+
+.landing-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 200px; */
+}
+.landing-image-container{
+    width: 100%;
+}

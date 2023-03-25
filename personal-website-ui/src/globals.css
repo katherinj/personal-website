@@ -12,14 +12,21 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   color: black;
+  padding: 0;
+  margin: 0;
 }
 
 :root {
-  --muted-purple: rgb(162, 143, 157);
-  --black-coffee: rgb(50, 41, 47);
-  --egg-shell: rgb(250, 243, 221);
-  --myrtle-green: rgb(29, 120, 116);
-  --wintergreen-dream: rgb(103, 146, 137);
+  /* Purple colors */
+  --light-purple: #EEC8E0;
+  --lighter-purple: #ffeaf7;
+
+  /* Green colors */
+  --light-green: #A8C7BB;
+  --lighter-green: #cfd6d4;
+
+  /* Paddings/ sizes */
+  --navbar-height: 50px;
   --side-padding: 20px;
 }
 
