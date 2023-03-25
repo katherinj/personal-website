@@ -8,6 +8,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  cursor: default;
+}
+
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -20,12 +32,4 @@ body {
   --egg-shell: rgb(250, 243, 221);
   --myrtle-green: rgb(29, 120, 116);
   --wintergreen-dream: rgb(103, 146, 137);
-  --side-padding: 20px;
 }
-
-/* i,
-button {
-  cursor: pointer;
-  outline: none;
-  border: none;
-} */

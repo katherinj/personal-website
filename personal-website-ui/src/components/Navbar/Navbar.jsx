@@ -31,14 +31,14 @@ export default function Navbar() {
 
       <div className="nav-links" id="nav-links">
         <Link
-          to="/"
+          to="/about"
           className={currentLink == "About" ? "active nav-link" : "nav-link"}
           onClick={() => myFunction("About")}
         >
           About Me
         </Link>
         <Link
-          to="/"
+          to="/portfolio"
           className={
             currentLink == "Portfolio" ? "active nav-link" : "nav-link"
           }
@@ -64,17 +64,6 @@ export function Logo() {
       <Link to="/">
         <i className="fa-solid fa-xmarks-lines"></i>
       </Link>
-    </div>
-  );
-}
-
-export function NavLinks() {
-  return (
-    <div className="nav-links">
-      <Link to="/">Home</Link>
-      <Link to="/">About us</Link>
-      <Link to="/">Contact us</Link>
-      <Link to="/">Catalog</Link>
     </div>
   );
 }

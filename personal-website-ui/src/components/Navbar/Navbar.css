@@ -17,12 +17,12 @@
   height: 100%;
   align-items: center;
 }
-.logo{
+.logo {
   display: flex;
   width: 20%;
   min-width: 200px;
 }
-.title {
+.navbar .title {
   font-size: 25px;
   font-weight: bolder;
 }
@@ -37,16 +37,14 @@
   z-index: 99;
 }
 
-.nav-link::after{
-  content: '';
+.nav-link::after {
+  content: "";
   display: block;
   width: 0%;
   height: 1px;
   background: #000;
   transform: scale(0);
-  transition: .2s all ease-out;
-
-  
+  transition: 0.2s all ease-out;
 }
 .nav-link:hover:after {
   transform: scale(1);
@@ -57,7 +55,7 @@
   /* background-color: rgb(240, 217, 237); */
   color: black;
 }
-.navbar .nav-link.active::after{
+.navbar .nav-link.active::after {
   transform: scale(1);
   width: 100%;
 }
@@ -66,7 +64,6 @@
 .navbar .menu-icon {
   visibility: hidden;
 }
-
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
