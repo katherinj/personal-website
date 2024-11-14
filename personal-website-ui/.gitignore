@@ -10,6 +10,7 @@
 
 # production
 /build
+dist
 
 # misc
 .DS_Store
@@ -26,3 +27,26 @@ yarn-error.log*
 
 *-lock.*
 *.lock
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+
+# VS Code settings
+.vscode/
+
+# General environment and config files
+.env.*
+.env
