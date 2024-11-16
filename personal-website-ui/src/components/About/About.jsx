@@ -1,7 +1,5 @@
 import * as React from "react";
 import { useState } from "react";
-import { Navbar, Landing } from "components";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./About.css";
 
 export default function About() {
