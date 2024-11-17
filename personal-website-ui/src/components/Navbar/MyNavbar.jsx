@@ -8,7 +8,7 @@ export default function MyNavbar() {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <LinkContainer to="/">
-          <Navbar.Brand>Katherin.io</Navbar.Brand>
+          <Navbar.Brand className="fw-semibold">Katherin.io</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

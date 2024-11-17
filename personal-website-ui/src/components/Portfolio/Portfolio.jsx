@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Portfolio.css";
+import { Card, Container, Row, Col, Form } from "react-bootstrap";
 
 const projectsData = [
   {
@@ -32,28 +32,40 @@ export default function Portfolio() {
     );
   });
 
-  const projectCards = filteredProjects.map((project, index) => (
-    <div key={index} className="project-card">
-      <img src={project.imageUrl} alt={project.title} />
-      <h3>{project.title}</h3>
-      <p>{project.description}</p>
-      <p>
-        <strong>Skills: </strong>
-        {project.skills.join(", ")}
-      </p>
-    </div>
-  ));
-
   return (
-    <div className="portfolio">
-      <h1>My Portfolio</h1>
-      <input
-        type="text"
-        placeholder="Search by project name, skill, or language..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-      <div className="project-list">{projectCards}</div>
-    </div>
+    <Container className="portfolio">
+      <h1 className="text-center my-4">My Portfolio</h1>
+
+      <Form.Group className="mb-4">
+        <Form.Control
+          type="text"
+          placeholder="Search by project name, skill or language..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </Form.Group>
+
+      <Row xs={1} sm={2} md={3} className="g-4">
+        {filteredProjects.map((project, index) => (
+          <Col key={index}>
+            <Card className="h-100 shadow-sm">
+              <Card.Img
+                variant="top"
+                src={project.imageUrl}
+                alt={project.title}
+              />
+              <Card.Body>
+                <Card.Title>{project.title}</Card.Title>
+                <Card.Text>{project.description}</Card.Text>
+                <Card.Text>
+                  <strong>Skills: </strong>
+                  {project.skills.join(", ")}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 }
