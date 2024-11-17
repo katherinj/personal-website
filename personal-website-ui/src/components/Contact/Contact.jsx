@@ -6,7 +6,7 @@ export default function Contact() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     alert("Your message has been sent!");
-    /* will handle later on */
+    /* will handle laterr on */
   };
 
   return (
