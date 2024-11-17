@@ -16,29 +16,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: List files in the root directory for debugging
-      - name: List files in root
-        run: ls -R
-
-      # Step 3: Set up Node.js environment
+      # Step 2: Set up Node.js environment
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
 
-      # Step 4: Install dependencies
+      # Step 3: Install dependencies
       - name: Install dependencies
         working-directory: personal-website-ui
         run: npm install
 
-      # Step 5: Build the project
+      # Step 4: Build the project
       - name: Build project
         working-directory: personal-website-ui
         run: npm run build
 
-      # Step 6: Deploy to GitHub Pages
+      # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: personal-website-ui/build
+          publish_dir: personal-website-ui/dist
