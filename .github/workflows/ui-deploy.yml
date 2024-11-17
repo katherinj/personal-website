@@ -16,26 +16,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Navigate to the UI folder
-      - name: Navigate to UI folder
-        working-directory: personal-website-ui
-        run: echo "Navigated to UI folder"
-
-      # Step 3: Set up Node.js environment
+      # Step 2: Set up Node.js environment
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
 
-      # Step 4: Install dependencies
+      # Step 3: Install dependencies
       - name: Install dependencies
+        working-directory: personal-website-ui
         run: npm install
 
-      # Step 5: Build the project
+      # Step 4: Build the project
       - name: Build project
+        working-directory: personal-website-ui
         run: npm run build
 
-      # Step 6: Deploy (e.g., to GitHub Pages or another service)
+      # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
