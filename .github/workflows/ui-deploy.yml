@@ -1,0 +1,43 @@
+name: Deploy Frontend
+
+on:
+  push:
+    paths:
+      - "personal-website-ui/**"
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Navigate to the UI folder
+      - name: Navigate to UI folder
+        working-directory: personal-website-ui
+        run: echo "Navigated to UI folder"
+
+      # Step 3: Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      # Step 4: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 5: Build the project
+      - name: Build project
+        run: npm run build
+
+      # Step 6: Deploy (e.g., to GitHub Pages or another service)
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: personal-website-ui/build
