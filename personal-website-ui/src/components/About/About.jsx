@@ -29,9 +29,6 @@ export default function About() {
           <Card className="shadow-sm">
             <Card.Body>
               <Card.Title>Skills</Card.Title>
-              <Card.Text>
-                Explore my skills and see the journey I've taken with each one!
-              </Card.Text>
               <div className="d-flex flex-wrap gap-2 mt-3">
                 {[
                   "Java",
@@ -69,6 +66,47 @@ export default function About() {
               <Card.Title>Previous Experiences</Card.Title>
               <Accordion flush>
                 <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                    Workday / Software Application Development Engineer Intern
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Spearheaded a project on the Federal HR team focused on the
+                    generation of federal forms, ensuring secure capture and
+                    processing of data in PDF format * Contributed to the
+                    creation and refinement of a Technical Design Document,
+                    detailing software specifications, architectural designs,
+                    UML charts, and comprehensive testing requirements *
+                    Proficiently learned and utilized Workday’s proprietary
+                    object-oriented language, built atop the Java framework, to
+                    develop robust software solutions * Acquired hands-on
+                    experience with BIRT (Business Intelligence and Reporting
+                    Tools), leveraging JavaScript within BIRT to dynamically
+                    autosize fields for improved accuracy and presentation on
+                    federal forms * Collaborated actively within an Agile Scrum
+                    team, ensuring seamless communication and consistent
+                    progress towards set objectives * Managed and completed
+                    individual tasks, including tackling a diverse range of Jira
+                    tickets and successfully delivering on a personal epic*
+                    Spearheaded a project on the Federal HR team focused on the
+                    generation of federal forms, ensuring secure capture and
+                    processing of data in PDF format * Contributed to the
+                    creation and refinement of a Technical Design Document,
+                    detailing software specifications, architectural designs,
+                    UML charts, and comprehensive testing requirements *
+                    Proficiently learned and utilized Workday’s proprietary
+                    object-oriented language, built atop the Java framework, to
+                    develop robust software solutions * Acquired hands-on
+                    experience with BIRT (Business Intelligence and Reporting
+                    Tools), leveraging JavaScript within BIRT to dynamically
+                    autosize fields for improved accuracy and presentation on
+                    federal forms * Collaborated actively within an Agile Scrum
+                    team, ensuring seamless communication and consistent
+                    progress towards set objectives * Managed and completed
+                    individual tasks, including tackling a diverse range of Jira
+                    tickets and successfully delivering on a personal epic
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
                   <Accordion.Header>Netflix Pathways Bootcamp</Accordion.Header>
                   <Accordion.Body>
                     I participated in a 12-week immersive program at the Netflix
@@ -79,7 +117,7 @@ export default function About() {
                     AWS.
                   </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey="1">
+                <Accordion.Item eventKey="2">
                   <Accordion.Header>
                     Workday x CodePath / Full Stack Software Development Intern
                   </Accordion.Header>
@@ -94,7 +132,7 @@ export default function About() {
                     and Agile methodology within five weeks.
                   </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey="2">
+                <Accordion.Item eventKey="3">
                   <Accordion.Header>
                     Walmart Pharmacy / Certified Pharmacy Technician
                   </Accordion.Header>

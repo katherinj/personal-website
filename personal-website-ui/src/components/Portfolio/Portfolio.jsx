@@ -4,17 +4,29 @@ import { Card, Container, Row, Col, Form } from "react-bootstrap";
 const projectsData = [
   {
     title: "TrackerMax",
+    liveLink: "",
+    liveLinkDescription: "",
     description: "A brief description of Project 1...",
-    imageUrl: "https://via.placeholder.com/200",
+    imageUrl: "../media/placeholder-image.png",
     skills: ["JavaScript", "React", "HTML", "CSS"],
   },
   {
-    title: "Project 2",
-    description: "A brief description of Project 2...",
-    imageUrl: "https://via.placeholder.com/200",
-    skills: ["Java", "Spring Boot", "MySQL"],
+    title: "Word Cloud",
+    liveLink: "https://katherinj.github.io/DataVisualization/assignment4/",
+    liveLinkDescription: "Live GitHub page",
+    imageUrl: "../media/placeholder-image.png",
+    description:
+      "This Word Cloud Project involves creating a visual representation of textual data where the size of each word corresponds to its frequency or importance in the text",
+    skills: ["React", "D3"],
   },
-  // Add more projects...
+  {
+    title: "TrackerMax",
+    liveLink: "",
+    liveLinkDescription: "",
+    description: "A brief description of Project 1...",
+    imageUrl: "../media/placeholder-image.png",
+    skills: ["JavaScript", "React", "HTML", "CSS"],
+  },
 ];
 
 export default function Portfolio() {
@@ -56,6 +68,9 @@ export default function Portfolio() {
               />
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
+                <Card.Link href={project.liveLink}>
+                  {project.liveLinkDescription}
+                </Card.Link>
                 <Card.Text>{project.description}</Card.Text>
                 <Card.Text>
                   <strong>Skills: </strong>
