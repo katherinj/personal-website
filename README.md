@@ -1,6 +1,6 @@
 # Katherin's Personal Website 
 *** Under construction *** 
-link to live website 
+
 [link to live website](https://katherin.io)
 
 ## Overview
