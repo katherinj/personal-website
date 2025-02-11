@@ -24,7 +24,7 @@ jobs:
 
       # Step 3: Install dependencies
       - name: Install dependencies
-        working-directory:
+        working-directory: katherin-io-ui
         run: npm install
 
       # Step 4: Build the project
