@@ -3,7 +3,7 @@ name: deploy-frontend
 on:
   push:
     paths:
-      - "personal-website-ui/**"
+      - "katherin-io-ui/**"
     branches:
       - main
 
@@ -24,12 +24,12 @@ jobs:
 
       # Step 3: Install dependencies
       - name: Install dependencies
-        working-directory: personal-website-ui
+        working-directory:
         run: npm install
 
       # Step 4: Build the project
       - name: Build project
-        working-directory: personal-website-ui
+        working-directory: katherin-io-ui
         run: npm run build
 
       # Step 5: Deploy to GitHub Pages
@@ -37,4 +37,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: personal-website-ui/dist
+          publish_dir: katherin-io-ui/dist
