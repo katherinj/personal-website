@@ -7,7 +7,7 @@ export default function Landing() {
     <section className="bg-light py-5 text-center">
       <Container>
         <img
-          src="../../../media/landing-page-profile-pic.jpeg"
+          src="https://raw.githubusercontent.com/katherinj/katherin-io/refs/heads/main/katherin-io-ui/media/landing-page-profile-pic.jpeg"
           className="profile-img"
         />
         <h1 className="display-4 fw-bold">Welcome to Katherin.io</h1>
